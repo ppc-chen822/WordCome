@@ -1,0 +1,23 @@
+<!--头像区域 -->
+<view class="wb_content">
+    <view class="avatar">
+        <view class="wb_sname">
+            <view class="Photo">
+                <view bindtap="login" wx:if="{{!userInfo}}">授权登录</view>
+                <image src="{{userInfo.avatarUrl}}" class="av_p" wx:else></image>
+            </view>
+            <view class="nickName">{{userInfo.nickName}}</view>
+            <!-- <view class="TextPost">
+                找个对象，回家过年
+            </view> -->
+        </view>
+    </view>
+    <view class="menu">
+        <button open-type='contact'>
+            在线客服
+        </button>
+        <view bindtap="loginOut">
+            退出登录
+        </view>
+    </view>
+</view>

@@ -1,0 +1,79 @@
+.wb_content{
+    width: 96%;
+    margin: 30rpx auto;
+}
+.wb_content .lea_word{
+    font-size:72rpx ;
+    font-weight: bold;
+    margin-left: 20rpx;
+    margin-top: 80rpx;
+  }
+.wb_content .wb_proce{
+    margin-left: 20rpx;
+    margin-top: 25rpx;
+    display: flex;
+}
+.wb_proce .us_proce{
+    margin-left: 20rpx;
+}
+.wb_proce .pro{
+    margin-left: 8rpx;
+}
+.wb_content .wb_sy{
+    margin-top: 25rpx;
+    margin-left: 20rpx;
+}
+.wb_content .wb_sy .trans{
+    margin-top: 10rpx;
+}
+.wb_content .wb_sy .trans>text:first-child{
+    font-size: 30rpx;
+}
+.wb_content .wb_sy .trans>text:last-child{
+    margin-left: 15rpx;
+}
+.wb_content .lea_eg{
+    margin-top: 25rpx;
+    padding: 20rpx 20rpx 60rpx 20rpx;
+    border-radius: 16rpx;
+    background-color: rgba(0,0,0,0.1);
+}
+.wb_content .lea_eg>view{
+    line-height: 1.5em;
+}
+.wb_content .lea_rel{
+    width: auto;
+    margin-top: 25rpx;
+    padding: 20rpx 20rpx 60rpx 20rpx;
+    border-radius: 16rpx;
+    background-color: rgba(0,0,0,0.1);
+    position: relative;
+}
+.wb_content .lea_rel .lea_btn{
+    position: absolute;
+    display: flex;
+    bottom: 10rpx;
+}
+.wb_content .lea_rel .lea_btn>view{
+    font-size: 28rpx;
+    margin-left: 10rpx;
+    padding: 6rpx 20rpx;
+    border-radius: 10rpx;
+}
+.wb_content .lea_rel .lea_btn .active{
+    background-color: #fff;
+}
+.wb_content .lea_rel .lea_content>view>view{
+    line-height: 1.5em;
+}
+.wb_content>button{
+    margin-top: 20rpx;
+}
+/* .relWord>view:first-child,.phrase>view:first-child{
+    border-radius: 10rpx;
+    padding: 5rpx;
+    font-size: xx-small;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: inline-block;
+} */

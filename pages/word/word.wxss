@@ -1,0 +1,88 @@
+page{
+    height: 100%;
+}
+.content{
+    width: 94%;
+    /* background-color: #ffffff; */
+    border-radius: 30rpx;
+    margin: 30rpx auto;
+    padding: 30rpx;
+    /* box-shadow: 0rpx 8rpx 20rpx 0px rgba(0, 0, 0,0.2); */
+    box-sizing: border-box;
+}
+.wb_word{
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.wb_word>view{
+    line-height: 80rpx;
+    font-size: 72rpx;
+    font-weight: bold;
+}
+.wb_word>text{
+    font-size: 32rpx;
+    line-height: 80rpx;
+}
+.wb_proce{
+    margin-top: 42rpx;
+    display: flex;
+}
+.wb_proce .us_proce{
+    margin-left: 20rpx;
+}
+.wb_proce .pro{
+    margin-left: 8rpx;
+}
+.wb_trans{
+    margin-top: 22px;
+}
+.wb_trans .wb_sy{
+    display: flex;
+}
+.wb_trans .wb_sy .trans{
+    line-height:1.5em; 
+}
+
+.wb_trans .wb_sy .trans>text:last-child{
+    margin-left: 22rpx;
+}
+.wb_trans .wb_sy>view:first-child{
+    width: 90rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    flex-shrink: 0;
+    border-radius: 15rpx;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #787878;
+    font-size: 22rpx;
+    margin-top: 5rpx;
+    margin-right: 22rpx;
+}
+.wb_trans .wb_sy>view:first-child{
+    display: inline-block;
+}
+.wb_trans .wb_em{
+    margin-top: 22rpx;
+    display: flex;
+}
+.wb_trans .wb_em>view:first-child{
+    width: 90rpx;
+    height: 35rpx;
+    line-height: 35rpx;
+    flex-shrink: 0;
+    border-radius: 15rpx;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #787878;
+    font-size: 22rpx;
+    margin-top: 5rpx;
+}
+.wb_trans .wb_em>view:nth-child(2){
+    margin-left: 22rpx;
+}
+.wb_trans .wb_em>view:nth-child(2)>text{
+    display: inline-block;
+    line-height:1.5em; 
+}

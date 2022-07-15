@@ -1,0 +1,61 @@
+<view class="wb_content">
+	<view class="lea_word">{{showlist.wordHead}}</view>
+	<view class="wb_proce">
+		<view class="uk_proce">
+			<text class="iconfont icon-shengyin"></text>
+			<text class="pro">英[{{showlist.content.ukphone}}]</text>
+		</view>
+		<view class="us_proce">
+			<text class="iconfont icon-shengyin"></text>
+			<text class="pro">美[{{showlist.content.usphone}}]</text>
+		</view>
+	</view>
+	<view class="wb_sy">
+		<view class="trans" wx:for="{{trans}}" wx:key="index">
+			<text>{{item.pos}}.</text>
+			<text>{{item.tranCn}}.</text>
+		</view>
+	</view>
+	<view class="lea_eg">
+		<view>{{showlist.content.sentence.sentences[0].sContent}}</view>
+		<view>{{showlist.content.sentence.sentences[0].sCn}}</view>
+	</view>
+	<view class="lea_rel">
+		<view class="lea_content">
+			<view wx:if="{{index===selindex}}" wx:for="{{tablist}}" wx:key="index">
+				<view wx:for="{{item.detail.phrases}}" wx:key="index">
+					<text decode="{{true}}">{{item.pContent}}&nbsp;&nbsp;&nbsp;{{item.pCn}}</text>
+				</view>
+			</view>
+            <view wx:if="{{index===selindex}}" wx:for="{{tablist}}" wx:key="index">
+				<view wx:for="{{item.detail.rels}}" wx:key="index">
+					{{item.pos}}
+                    <view wx:for="{{item.words}}"wx:key="index">
+                        <text decode="{{true}}">{{item.hwd}}&nbsp;&nbsp;&nbsp;{{item.tran}}</text>
+                    </view>
+				</view>
+			</view>
+            <view wx:if="{{index===selindex}}" wx:for="{{tablist}}" wx:key="index">
+				<view wx:for="{{item.detail.synos}}" wx:key="index">
+					{{item.pos}}
+                    <view>{{item.tran}}</view>
+                    <view wx:for="{{item.hwds}}"wx:key="index">
+                        <text decode="{{true}}">{{item.w}}</text>
+                    </view>
+				</view>
+			</view>
+		</view>
+		<view class="lea_btn">
+			<view
+			 wx:for="{{tablist}}"
+			 wx:key="index"
+			 bindtap="change"
+			 data-index="{{index}}"
+			 class="{{index===selindex?'active':''}}"
+			>{{item.title}}
+			</view>
+		</view>
+	</view>
+	<button bindtap="next">下一条</button>
+</view>
+

@@ -1,0 +1,59 @@
+ /* 菜单区域 */
+ .wb_sname{
+     width: 94%;
+     margin: 0 auto;
+ }
+ .wb_sname .Photo>view{
+    width: 200rpx;
+    height: 200rpx;
+    background-color: silver;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 200rpx;
+    margin: 100rpx auto 0 auto;
+    overflow: hidden;
+ }
+ .wb_sname .Photo .av_p{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10%;
+    margin: 100rpx auto 0 auto;
+    display: block;
+ }
+ .wb_sname .nickName{
+     margin: 20rpx auto;
+     text-align: center;
+ }
+ .wb_sname .TextPost{
+     margin: 20rpx auto;
+     text-align: center;
+ }
+.menu{
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    box-sizing: border-box;
+  }
+  /* 四行样式 */
+.menu>view{
+    background-color: #fff;
+    margin-top: 10rpx;
+    line-height: 100rpx;
+    border-bottom: 1px solid #efefef;
+    height: 100rpx;
+    border-radius: 20rpx;
+    padding-left: 20rpx;
+  }
+.menu>button{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10rpx;
+    line-height: 100rpx;
+    border-bottom: 1px solid #efefef;
+    border-radius: 20rpx;
+    padding:0;
+    padding-left: 20rpx;
+    font-weight: normal;
+    font-size: 32rpx;
+    text-align: left;
+  }

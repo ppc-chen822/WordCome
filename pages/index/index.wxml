@@ -1,0 +1,16 @@
+<view class="wb_content">
+	<view class="wb_time">
+		<view>{{month}}月</view>
+		<view>{{day}}日</view>
+		<view>{{weekday}}</view>
+	</view>
+	<view class="wb_title">输入你想查找的单词~</view>
+	<view class="wb_search">
+		<input type="text" value="{{search}}" bindfocus="btnUp" bindblur="btnUnder" placeholder="Search" bindchange="handlerSearch" />
+		<text class="icon iconfont icon-sousuo"></text>
+	</view>
+</view>
+<view class="wb_btn" style="bottom:{{bottom}}" bindtap="getData">
+	搜索
+	<text class="icon iconfont icon-you"></text>
+</view>

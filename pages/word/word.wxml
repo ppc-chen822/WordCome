@@ -1,0 +1,36 @@
+<view class="content">
+    <view class="wb_word">
+        <view class="base-font">{{search}}</view>
+        <text class="iconfont {{isCollect?'icon-shoucang-shoucang':'icon-shoucang'}}" bindtap="collect" data-name="tap"></text>
+        <!-- <text class="iconfont icon-shoucang"></text> -->
+    </view>
+    <view class="wb_proce" wx:if="{{trans!=''}}">
+        <view class="uk_proce">
+            <text class="iconfont icon-shengyin"></text>
+            <text class="pro">英[{{ukphone}}]</text>
+        </view>
+        <view class="us_proce">
+            <text class="iconfont icon-shengyin"></text>
+            <text class="pro">美[{{usphone}}]</text>
+        </view>
+    </view>
+    <view class="wb_trans">
+        <view class="wb_sy">
+            <view>释义</view>
+            <view>
+                <view class="trans" wx:if="{{trans==''}}">{{tran}}</view>
+                <view class="trans" wx:for="{{trans}}" wx:key="id">
+                    <text>{{item.pos}}</text>
+                    <text>{{item.tranCn}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="wb_em" wx:if="{{trans!=''}}">
+            <view>例句</view>
+            <view>
+                <text>{{sContent}}</text>
+                <text>{{sCn}}</text>
+            </view>
+        </view>
+    </view>
+</view>

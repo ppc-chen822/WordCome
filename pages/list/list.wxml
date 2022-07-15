@@ -1,0 +1,8 @@
+<view class="wb_content">
+    <!-- <view class="wb_title">来一杯word~</view> -->
+    <view class="list_title">{{showword}}</view>
+    <view class="wb_btn" bindtap="goLearn">
+        Learn
+        <text class="icon iconfont icon-you"></text>
+    </view>
+</view>

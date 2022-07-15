@@ -1,0 +1,59 @@
+.wb_content{
+  width: 96%;
+  height: 400rpx;
+  /* background-color: #ffffff; */
+  border-radius: 30rpx;
+  margin: 30rpx auto;
+  /* box-shadow: 0rpx 8rpx 20rpx 0px rgba(0, 0, 0,0.2); */
+}
+.wb_time{
+  display: flex;
+  padding:25rpx;
+  font-size: 36rpx;
+}
+.wb_time>view:last-child{
+  margin-left: 20rpx;
+}
+.wb_title{
+  font-size:46rpx ;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+.wb_search{
+  border: 1.5px solid black;
+  border-radius: 30rpx;
+  width: 94%;
+  height: 80rpx;
+  margin: 30rpx auto;
+  display: flex;
+}
+.icon{
+  font-size: 56rpx;
+  line-height: 80rpx;
+  margin-right: 20rpx;
+}
+.wb_search>input{
+  width: 90%;
+  padding-left:20rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+.wb_btn{
+  background-color: hsl(0, 0%, 79%);
+  color: #fff;
+  width: 250rpx !important;
+  height: 100rpx;
+  position: fixed;
+  bottom: 100rpx;
+  right: 4%;
+  font-size: 42rpx;
+  padding: 12rpx;
+  border-radius: 40rpx;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0rpx 8rpx 20rpx 0px rgba(0, 0, 0,0.2);
+}
+.wb_btn>text{
+  font-size: 36rpx;
+  margin-right: -10rpx;
+}

@@ -1,0 +1,8 @@
+/**app.wxss**/
+page{
+  background-color: #f5f6f7;
+}
+text,view{
+  font-family: "Droid Sans";
+}
+@import "iconfont.wxss"; 
